@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=./styles.css />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="portfolio">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h3>Emerson Schroer</h3>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>     
+                    <img class="burger" src="images/hamburger.svg" alt="burger" />
+                   
+            </nav>
+            </header>
+            <main>
+                <section id="home"> 
+                    <div class="landing">
+                        <image class="brp" src="./images/IMG_1061.jpg" alt="Blue Ridge Parkway"/>
+                    </div>
+                </section>
+                <section id=about-me class="page-about-me">
+                    <div class="details">
+                        <h1>About Me</h1>
+                        <h2>Web Developer</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error dolorem et impedit fuga aliquam ratione asperiores eum quidem illum soluta iure placeat nam tempore, facere quas nemo dolor quos veniam!</p>
+                    </div>
+                    <div class="hero">
+                        <img class="puzzle" src="images/puzzle.svg" alt="puzzle" height="200"/>
+                    </div>  
+                    
+                </section>
+                <div class="tools">
+                <h3>Tools I Use</h3>
+                   <img src="images/html5.svg" alt="html5 logo" height="100"/>
+                   <img class="css-logo" src="images/css3-logo-8724075274-seeklogo.com.png" alt="css logo" height="100" />
+                    <img src="images/javascript-seeklogo.com.svg" alt="javascript logo" height="90"/>
+                    <img src="images/react-seeklogo.com.svg" alt="react logo" height="100" />
+                    <img src="images/bootstrap-seeklogo.com.svg" alt="bootstrap logo" height="100" />
+                </div>
+                <section>
+                    <div class="three-dots-container">
+                        <image class="three-dots" src="./images/more.svg" alt="three dots" height="200" />
+                    </div>
+                </section>
+                <section>
+                
+                <div class="spacer">
+                </div>
+                <div class="contact-title">
+                    <h3>Let's Connect</h3>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form" method="post" action="contact-form-handler.php">
+                        <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                        <br>
+                        <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+                        <br>
+                        <textarea name="message" class="form-control" placeholder="Message" rows="10" required>
+                        </textarea><br>
+                        <input type="submit" class="form-control submit" value="Send message">
+
+                    </form>
+                </div>
+            </section>
+            </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
