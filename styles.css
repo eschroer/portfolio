@@ -62,26 +62,39 @@ nav {
 .page-about-me {
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    height: 75vh;
+    width: 100%;
     justify-content: space-around;
     color: #0C496E;        
 }
 
 .details {
     background-color: #7297D9;
-    height: 300px;
+    height: 75vh;
+    width: 100%;
     padding-left: 0px;
     text-align: end;
     padding-right: 40px;
-    padding-top: 50px;
+    padding-top: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    text-align:left;
+    margin-left: 50px;
+
 }
 
 .hero {
     background-color: #7297D9;
-    height: 300px;
+    height: 75vh;
     width: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -89,6 +102,7 @@ nav {
     background-color: #7297D9;
     max-width: 200px;
     margin-right: 20px;
+    display: block;
       
     
 }
@@ -102,7 +116,7 @@ nav {
       position: absolute;
       right: 0px;
       height: 92vh;
-      top: 8vh;
+      top: 19vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -115,6 +129,15 @@ nav {
   }
   .burger {
       display: block;
+  }
+  .details{
+      height: 100vh;
+  }
+  .page-about-me{
+      height: 100vh;
+  }
+  .hero {
+      height: 150vh;
   }
   
 }
@@ -148,7 +171,7 @@ nav {
 }
 
 .spacer {
-    height: 30vh;
+    height: 10vh;
     width: 100%;
     background-color: #7BA26C;
     flex-direction: row;
@@ -162,8 +185,9 @@ nav {
     justify-content: center;
     margin: auto;
 }
- h3 {
-     text-align: center;
+ h1 {
+    padding: 20px; 
+    text-align: center;
      font-size: 30px;
      }
 
@@ -171,6 +195,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 50px;
  }
 
  @media screen and (max-width: 768px){
@@ -185,6 +210,47 @@ nav {
         margin-right: auto;
         height: 100;
     }
+ }
+h3 {
+    padding: 20px; 
+    text-align: center;
+     font-size: 30px;
+}
+
+.project-content{
+    height: 40vh;
+    background:#0C496E;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    }
+ .project-content p {
+    display: flex;
+    margin: auto;
+    padding-left: 10px;
+    flex-direction: row;
+    width: 60%;
+ }   
+ .betta-basics{
+     border-radius: 40px;
+     padding-top: 10px;
+     margin: auto;
+     justify-content: center;
+ }  
+ 
+ .weather-app{
+     border-radius: 40px;
+     padding-top: 10px;
+     margin: auto;
+     justify-content: center;
+ }
+
+ .project-links a {
+     text-decoration: none;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
  }
 
  form {
@@ -209,6 +275,7 @@ nav {
     align-items: center;
      margin-left: auto;
      margin-right: auto;
+     padding: 20px;
  }
 
  #contact-form {
@@ -235,3 +302,27 @@ nav {
           background-color: #f44336;
           cursor: pointer;
       }
+
+      .footer {
+          height: 30vh;
+          background-color: #07336E;
+          display: flex;
+          justify-content:space-around;
+          flex-direction: row;
+      }
+
+      .footer-content {
+          text-align: center;
+      }
+
+       .footer-links li {
+        list-style: none;
+    }
+      .footer-links a {
+        color: rgb(226,226,266);
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 14px;
+    
+    }
