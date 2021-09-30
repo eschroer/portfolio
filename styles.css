@@ -62,7 +62,7 @@ nav {
 .page-about-me {
     display: flex;
     flex-direction: row;
-    height: 75vh;
+    height: 50vh;
     width: 100%;
     justify-content: space-around;
     color: #0C496E;        
@@ -70,7 +70,7 @@ nav {
 
 .details {
     background-color: #7297D9;
-    height: 75vh;
+    height: 50vh;
     width: 100%;
     padding-left: 0px;
     text-align: end;
@@ -159,6 +159,7 @@ p {
 
 .brp {
     height: 90vh;
+    width: 100%;
 }
 
 .landing {
@@ -231,7 +232,7 @@ h3 {
     flex-direction: row;
     width: 60%;
  }   
- .betta-basics{
+ .project-image{
      border-radius: 40px;
      padding-top: 10px;
      margin: auto;
@@ -247,10 +248,12 @@ h3 {
 
  .project-links a {
      text-decoration: none;
+     font-weight: 900;
      color: white;
      display: flex;
      flex-direction: column;
      align-items: center;
+     margin-bottom: 10px;
  }
 
  form {
@@ -304,7 +307,7 @@ h3 {
       }
 
       .footer {
-          height: 30vh;
+          height: 40vh;
           background-color: #07336E;
           display: flex;
           justify-content:space-around;
@@ -313,6 +316,7 @@ h3 {
 
       .footer-content {
           text-align: center;
+          font-size: 20px;
       }
 
        .footer-links li {
@@ -324,5 +328,15 @@ h3 {
         letter-spacing: 2px;
         font-weight: bold;
         font-size: 14px;
+        margin: 8px;
     
+    }
+
+    .social {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .social-icon {
+        margin: 10px;
     }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href=./styles.css />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Portfolio Site</title>
 </head>
 <body>
     <div class="portfolio">
@@ -19,13 +19,12 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about-me">About</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#form">Contact Me</a></li>
                 </ul>     
                     <img class="burger" src="images/hamburger.svg" alt="burger" />
-                   
             </nav>
-            </header>
+        </header>
             <main>
                 <section id="home"> 
                     <div class="landing">
@@ -35,16 +34,14 @@
                 <section id=about-me class="page-about-me">
                     <div class="details">
                         <h2>About Me</h2>
-                        <h3>Web Developer, Translator, Customer Experience Expert</h3>
-                        <p>I am a web developer with a background in the pet retail industry. Although my path to web development has been non-traditional, I am learning more and more every day and am passionate about building UIs that offer a great user experience. I am currently enrolled in Nucamp's Full Stack Web Development Bootcamp and am offering freelance translation to and from French while seeking my next web development opportunity.  </p>
+                        <h3>Web Developer, Customer Experience Expert</h3>
+                        <p>I am a web developer with a background in the pet retail industry. Although my path to web development has been non-traditional, I am learning more and more every day and am passionate about building UIs that offer a great user experience. I am currently enrolled in Nucamp's Full Stack Web Development Bootcamp and am building projects while seeking my next web development opportunity.  </p>
                     </div>
-                    
-                    
                 </section>
                 <div class="tools">
                 <h3>Tools I Use</h3>
-                   <img src="images/html5.svg" alt="html5 logo" height="100"/>
-                   <img class="css-logo" src="images/css3-logo-8724075274-seeklogo.com.png" alt="css logo" height="100" />
+                    <img src="images/html5.svg" alt="html5 logo" height="100"/>
+                    <img class="css-logo" src="images/css3-logo-8724075274-seeklogo.com.png" alt="css logo" height="100" />
                     <img src="images/javascript-seeklogo.com.svg" alt="javascript logo" height="90"/>
                     <img src="images/react-seeklogo.com.svg" alt="react logo" height="100" />
                     <img src="images/bootstrap-seeklogo.com.svg" alt="bootstrap logo" height="100" />
@@ -56,31 +53,36 @@
                     </div>
                 </section>
                 <section>
-                    <div class="projects"> 
+                    <div class="projects" id="projects"> 
                         <h3>Projects</h3>
                     </div>
                     <div class="spacer">
 
                     </div>
                     <div class="project-content">
-                        <img class="betta-basics" src="images/Betta-basics.png" alt="Betta basics logo" height="200"/>
-                        
-                    
-                    <p>A betta fish care website made using Bootstrap. My first project.</p>
+                        <a class="project-image" href=https://eschroer.github.io/crypto-tracker/ target="_blank"><img class="project-image" src="images/crypto-tracker.png" alt="logo" height="200"/></a>
+                        <p>A cryptocurrency tracker made in React that fetches its data from an API. </p>
+                        <br>
+                    </div>
+                    <div class="project-links">   
+                        <a href=https://github.com/eschroer/crypto-tracker target="_blank">Github</a>
+                        <a href=https://eschroer.github.io/crypto-tracker/ target="_blank">Live Site</a>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="project-content">
+                        <a class="project-image" href=https://bettabasics.netlify.app/ target="_blank"><img class="project-image" src="images/Betta-basics.png" alt="Betta basics logo" height="200"/></a>
+                        <p>A betta fish care website made using Bootstrap- my first project.</p>
                         <br>
                     </div>
                     <div class="project-links">   
                         <a href=https://github.com/eschroer/bettabasics target="_blank">Github</a>
                         <a href=https://bettabasics.netlify.app/ target="_blank">Live Site</a>
                     </div>
-                        <div class="spacer">
-
+                    <div class="spacer">
                     </div>
                     <div class="project-content">
-                        <img class="weather-app" src="images/weather-app.png" alt="Weather app landing page" height="200"/>
-                        
-                    
-                    <p>A weather app made using JavaScript's built-in geolocation feature. It fetches its data from the openweathermap.org API. </p>
+                        <a class="project-image" href=https://eschroer.github.io/weatherapp/ target="_blank"><img class="project-image" src="images/weather-app.png" alt="Weather app landing page" height="200"/></a>
+                        <p>A weather app made using JavaScript's built-in geolocation feature. It fetches its data from the openweathermap.org API. </p>
                         <br>
                     </div>
                     <div class="project-links">
@@ -88,11 +90,21 @@
                         <a href=https://eschroer.github.io/weatherapp/ target="_blank">Live Site</a>
                     </div>
                         <div class="spacer">
-
-                    </div>
+                   </div>
+                   <div class="project-content">
+                    <a class="project-image" href=https://expo.dev/@eschroer/aquariumhelper target="_blank"><img class="project-image" src="images/aquarium-helper.jpeg" alt="logo" height="200"/></a>
+                        <p>A React Native App that allows users to track aquarium water parameter and maintenance data. </p>
+                        <br>
+                 </div>
+                <div class="project-links">   
+                    <a href=https://github.com/eschroer/aquarium-helper target="_blank">Github</a>
+                    <a href=https://expo.dev/@eschroer/aquariumhelper target="_blank">Application on Expo</a>
+                </div>
+                    <div class="spacer">
+                    </div>          
                 </section>
-                <section>
                 
+            <section>
                 <div class="contact-title" id="form">
                     <h3>Let's Connect</h3>
                 </div>
@@ -105,7 +117,6 @@
                         <textarea name="message" class="form-control" placeholder="Message" rows="10" required>
                         </textarea><br>
                         <input type="submit" class="form-control submit" value="Send message">
-
                     </form>
                 </div>
             </section>
@@ -117,11 +128,17 @@
                         <ul class="footer-links">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about-me">About</a></li>
-                            <li><a href="#">Projects</a></li>
+                            <li><a href="#projects">Projects</a></li>
                             <li><a href="#form">Contact Me</a></li>
                         </ul> 
                      <div class="social">
-                        <h4>Follow me</h4> 
+                        <h4>Follow me:</h4> 
+                            <a href=https://github.com/eschroer target="_blank">
+                                <img class="social-icon" src="images/github-1.svg" alt="Github icon" height="50"/>
+                            </a>
+                            <a href=https://www.linkedin.com/in/emersonschroer88/  target="_blank">
+                                <img class="social-icon" src="images/linkedin-3.svg" alt="LinkedIn icon" height="50"/>
+                            </a>
                      </div>      
                     </div>
                 </div>
